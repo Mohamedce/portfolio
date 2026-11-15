@@ -58,89 +58,80 @@
     <div class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl px-2 py-5">
     <main>
             <h1 class="mb-4 text-3xl font-bold">Contact</h1>
-            <form action="#" method="get" class="grid gap-4 md:grid-cols-2">
-                <div>
-                    <label for="voornaam" class="block font-medium">voornaam<span class="text-red-700"
-                    aria-hidden="true"> *</span></label>
-                    <input type="text" id="voornaam" name="voornaam" autocomplete="given-name" required
-                    class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
-                </div>
-
-                <div>
-                    <label for="achternaam" class="block font-medium">achternaam<span class="text-red-700"
-                    aria-hidden="true"> *</span></label>
-                    <input type="text" id="achternaam" name="achternaam" autocomplete="family-name"
-                    required
-                    class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
-                </div>
-                <div class="md:col-span-2">
-                    <label for="mail" class="block font-medium">e-mail<span class="text-red-700"
-                    aria-hidden="true"> *</span></label>
-
-                    <input type="email" id="mail" name="email" autocomplete="email" required
-                    class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
-                </div>
-                <div class="md:col-span-2">
-                    <form action="#" method="get">
-                        <label for="gsm" class="block font-medium">gsm-nummer</label>
-                        <input type="tel" id="gsm" name="gsm" autocomplete="tel"
-                        pattern="04[0-9]{8}" title="Tien cijfers, beginnend met 04, zonder spaties"
-                        aria-describedby="gsm-hulp"
-                        class="mt-1 w-full rounded-lg border border-gray-400 px-3 py-2 bg-white">
-                        <p id="gsm-hulp" class="mt-1 text-sm text-gray-600">Schrijf tien cijfers zonder spaties, bijvoorbeeld 0412345678.</p>
-                    </form>
-                <div>
-                    <label for="onderwerp" class="block font-medium mt-4">onderwerp</label>
-                    <select id="onderwerp" name="onderwerp"
-                    class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2
-                    focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
-                    <option value="">Maak een keuze</option>
-                    <option value="stage">Stage</option>
-                    <option value="project">Project</option>
-                    <option value="vraag">Een vraag</option>
-                </select>
-            </div>
-            <div>
-                <label for="bericht" class="block font-medium mt-4">je bericht <span class="text-red-700"
-                    aria-hidden="true"> *</span></label>
-                <textarea id="bericht" name="bericht" rows="5" required
-                class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
-            </textarea>
-        </div>
-
-
-                </div>
-            </form>
-
- <form name="contact" method="POST" data-netlify="true" class="space-y-4 py-4">
+<form name="contact" method="POST" data-netlify="true" class="grid gap-4 md:grid-cols-2">
     <input type="hidden" name="form-name" value="contact">
 
-    <!-- Voeg hier je velden voor naam, e-mail en bericht toe, met een name-attribuut -->
+    <div>
+        <label for="voornaam" class="block font-medium">voornaam<span class="text-red-700" aria-hidden="true"> *</span></label>
+        <input type="text" id="voornaam" name="voornaam" autocomplete="given-name" required
+            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
+    </div>
 
-    <fieldset class="flex flex-wrap gap-10">
+    <div>
+        <label for="achternaam" class="block font-medium">achternaam<span class="text-red-700" aria-hidden="true"> *</span></label>
+        <input type="text" id="achternaam" name="achternaam" autocomplete="family-name" required
+            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
+    </div>
+
+    <div class="md:col-span-2">
+        <label for="mail" class="block font-medium">e-mail<span class="text-red-700" aria-hidden="true"> *</span></label>
+        <input type="email" id="mail" name="email" autocomplete="email" required
+            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
+    </div>
+
+    <div class="md:col-span-2">
+        <label for="gsm" class="block font-medium">gsm-nummer</label>
+        <input type="tel" id="gsm" name="gsm" autocomplete="tel"
+            pattern="04[0-9]{8}" title="Tien cijfers, beginnend met 04, zonder spaties"
+            aria-describedby="gsm-hulp"
+            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
+        <p id="gsm-hulp" class="mt-1 text-sm text-gray-600">Schrijf tien cijfers zonder spaties, bijvoorbeeld 0412345678.</p>
+    </div>
+
+    <div class="md:col-span-2">
+        <label for="onderwerp" class="block font-medium">onderwerp</label>
+        <select id="onderwerp" name="onderwerp"
+            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+            <option value="">Maak een keuze</option>
+            <option value="stage">Stage</option>
+            <option value="project">Project</option>
+            <option value="vraag">Een vraag</option>
+        </select>
+    </div>
+
+    <div class="md:col-span-2">
+        <label for="bericht" class="block font-medium">je bericht<span class="text-red-700" aria-hidden="true"> *</span></label>
+        <textarea id="bericht" name="bericht" rows="5" required
+            class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700"></textarea>
+    </div>
+
+    <fieldset class="md:col-span-2 flex flex-wrap gap-10">
         <legend class="font-medium">Hoe wil je antwoord krijgen?</legend>
         <div class="mt-2 flex items-center gap-2">
-            <input type="radio" id="via-mail" name="antwoord" value="mail" checked
-                class="size-5 accent-blue-700">
+            <input type="radio" id="via-mail" name="antwoord" value="mail" checked class="size-5 accent-blue-700">
             <label for="via-mail">per e-mail</label>
         </div>
         <div class="mt-2 flex items-center gap-2">
-            <input type="radio" id="via-tel" name="antwoord" value="telefoon"
-                class="size-5 accent-blue-700">
+            <input type="radio" id="via-tel" name="antwoord" value="telefoon" class="size-5 accent-blue-700">
             <label for="via-tel">per telefoon</label>
         </div>
     </fieldset>
 
-    <div class="flex items-center gap-2">
-        <input type="checkbox" id="kopie" name="kopie" value="ja"
-            class="size-5 accent-blue-700">
+    <div class="md:col-span-2 flex items-center gap-2">
+        <input type="checkbox" id="kopie" name="kopie" value="ja" class="size-5 accent-blue-700">
         <label for="kopie">stuur mij een kopie</label>
     </div>
 
-    <button type="submit"
-        class="rounded-lg bg-blue-700 px-5 py-2 font-semibold text-white hover:bg-blue-800">
-        Verstuur
-    </button>
+    <div class="md:col-span-2">
+        <button type="submit"
+            class="rounded-lg bg-blue-700 px-5 py-2 font-semibold text-white hover:bg-blue-800">
+            Verstuur
+        </button>
+        <p class="mt-2 text-sm text-gray-600">
+            Je gegevens worden alleen gebruikt om op je bericht te antwoorden.
+        </p>
+    </div>
+</form>
 
     <p class="text-sm text-gray-600">
         Je gegevens worden alleen gebruikt om op je bericht te antwoorden.
