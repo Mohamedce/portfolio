@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/tailwind.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<div class="mx-auto maw-w-5xl">
+<body class="bg-[#F7F5F0]">
+        <header class="max-w-7xl mx-auto px-2 py-3
+    flex flex-wrap items-center justify-between border-b
+    border-gray-200"
+    >
+    <img src="images/logo1.png" alt="logo"
+    width="90"
+    height="90">
+    <p class="text-xl font-bold">Mohamed Changhaf Embarki</p>
+    <input type="checkbox" id="menu-knop" class="peer sr-only" />
+    <label
+    for="menu-knop"
+    class="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 peer-focusvisible:outline-2 md:hidden"
+    >Menu
+    </label>
+    <nav
+    aria-label="Hoofdmenu"
+    class="hidden w-full peer-checked:block md:block md:w-auto">
+    <ul class="flex flex-col md:flex-row md:gap-2">
+        <li>
+            <a
+            href="index.html"
+            class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+            >Home</a>
+        </li>
+    <li>
+        <a
+        href="portfolio.html"
+        class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+        >Portfolio</a>
+    </li>
+    <li>
+        <a
+        href="project.html"
+        class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+        >Project</a>
+    </li>
+    <li>
+        <a
+        href="contact.html"
+        aria-current="page"
+        class="block px-3 py-2 rounded-lg bg-blue-100 text-blue-800 font-semibold"
+        >Contact</a>
+    </li>
+</ul>
+</nav>
+</header>
+    <div class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl px-2 py-5">
+    <main>
+            <h1 class="mb-4 text-3xl font-bold">Contact</h1>
+            <form action="#" method="get" class="grid gap-4 md:grid-cols-2">
+                <div>
+                    <label for="voornaam" class="block font-medium">voornaam<span class="text-red-700"
+                    aria-hidden="true"> *</span></label>
+                    <input type="text" id="voornaam" name="voornaam" autocomplete="given-name" required
+                    class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
+                </div>
+
+                <div>
+                    <label for="achternaam" class="block font-medium">achternaam<span class="text-red-700"
+                    aria-hidden="true"> *</span></label>
+                    <input type="text" id="achternaam" name="achternaam" autocomplete="family-name"
+                    required
+                    class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
+                </div>
+                <div class="md:col-span-2">
+                    <label for="mail" class="block font-medium">e-mail<span class="text-red-700"
+                    aria-hidden="true"> *</span></label>
+
+                    <input type="email" id="mail" name="email" autocomplete="email" required
+                    class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2">
+                </div>
+                <div class="md:col-span-2">
+                    <form action="#" method="get">
+                        <label for="gsm" class="block font-medium">gsm-nummer</label>
+                        <input type="tel" id="gsm" name="gsm" autocomplete="tel"
+                        pattern="04[0-9]{8}" title="Tien cijfers, beginnend met 04, zonder spaties"
+                        aria-describedby="gsm-hulp"
+                        class="mt-1 w-full rounded-lg border border-gray-400 px-3 py-2 bg-white">
+                        <p id="gsm-hulp" class="mt-1 text-sm text-gray-600">Schrijf tien cijfers zonder spaties, bijvoorbeeld 0412345678.</p>
+                    </form>
+                <div>
+                    <label for="onderwerp" class="block font-medium mt-4">onderwerp</label>
+                    <select id="onderwerp" name="onderwerp"
+                    class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py-2
+                    focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+                    <option value="">Maak een keuze</option>
+                    <option value="stage">Stage</option>
+                    <option value="project">Project</option>
+                    <option value="vraag">Een vraag</option>
+                </select>
+            </div>
+            <div>
+                <label for="bericht" class="block font-medium mt-4">je bericht <span class="text-red-700"
+                    aria-hidden="true"> *</span></label>
+                <textarea id="bericht" name="bericht" rows="5" required
+                class="mt-1 w-full rounded-lg border border-gray-400 bg-white px-3 py2 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700">
+            </textarea>
+        </div>
+
+
+                </div>
+            </form>
+
+            <form action="#" method="get" class="space-y-4 py-4">
+                <fieldset class="flex flex-wrap gap-10">
+                    <legend class="font-medium">Hoe wil je antwoord krijgen?</legend>
+                    <div class="mt-2 flex items-center gap-2">
+                        <input type="radio" id="via-mail" name="antwoord" value="mail" checked
+                        class="size-5 accent-blue-700">
+                        <label for="via-mail">per e-mail</label>
+                    </div>
+                    <div class="mt-2 flex items-center gap-2">
+                        <input type="radio" id="via-tel" name="antwoord" value="telefoon" class="size-5
+                        accent-blue-700">
+                        <label for="via-tel">per telefoon</label>
+                    </div>
+                </fieldset>
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="kopie" name="kopie" value="ja" class="size-5 accent-blue700">
+                    <label for="kopie">stuur mij een kopie</label>
+                </div>
+            </form>
+
+            <button type="submit"
+            class="rounded-lg bg-blue-700 px-5 py-2 font-semibold text-white hover:bg-blue-800">
+            Verstuur
+        </button>
+
+
+</main>
+
+    <aside>
+        <h3></h3>
+        <div class="grid grid-cols-2 md:grid-cols-1">
+            <section>
+                
+                   
+            </section>
+            <section>
+
+
+            </section>
+
+
+        </div>
+
+    </aside>
+    </div>
+
+    <footer class="max-w-7xl mx-auto px-2 py-3
+    flex flex-wrap items-center justify-between grid-cols-1 md:grid-cols-2 border-t border-gray-200 text-sm text-gray-600">
+        &copy 2026 Mohamed Changhaf Embarki
+
+    </footer>
+
+</body>
+</div>
+</html>

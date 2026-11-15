@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/tailwind.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body class="bg-[#F7F5F0]">
+    <header
+      class="max-w-7xl mx-auto px-2 py-3 flex flex-wrap items-center justify-between border-b border-gray-200"
+    >
+      <img src="images/Logo1.png" alt="logo" width="90" height="90" />
+      <p class="text-xl font-bold">Mohamed Changhaf Embarki</p>
+      <input type="checkbox" id="menu-knop" class="peer sr-only" />
+      <label
+        for="menu-knop"
+        class="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 peer-focusvisible:outline-2 md:hidden"
+        >Menu
+      </label>
+      <nav
+        aria-label="Hoofdmenu"
+        class="hidden w-full peer-checked:block md:block md:w-auto"
+      >
+        <ul class="flex flex-col md:flex-row md:gap-2">
+          <li>
+            <a
+              href="Index.html"
+              aria-current="page"
+              class="block px-3 py-2 rounded-lg bg-blue-100 text-blue-800 font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="portfolio.html"
+              class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="project.html"
+              class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="grid sm:grid-cols-3 max-w-7xl mx-auto px-2 py-3 gap-8">
+      <main class="col-span-2">
+        <section class="border broder-grey-100 rounded-lg p-5">
+          <h1 class="text-2xl font-bold">Van interesse naar expertise</h1>
+          <p>
+            Ik ben student Systeem- en Netwerkbeheer aan AP Hogeschool. Een
+            probleem oplossen, uitzoeken waarom iets niet werkt en vervolgens
+            een oplossing vinden, zijn zaken die mij motiveren.
+          </p>
+          <img
+            src="images/Sfeerbeeld3.jpg"
+            alt="Selfie"
+            class="aspect-video w-full rounded-lg mt-4"
+          />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <section class="border broder-gray-200 rounded-lg p-3 mt-4">
+              <h3 class="font-bold text-xl">Wat doe ik</h3>
+              <p>
+                Binnen mijn opleiding leer ik verschillende aspecten van IT en
+                infrastructuur kennen. Zo houd ik me bezig met netwerken,
+                servers, systeembeheer, virtualisatie, beveiliging en
+                troubleshooting. Daarbij leer ik werken met verschillende
+                technologieën en omgevingen. Een goed systeem moet niet alleen
+                werken, maar ook betrouwbaar, overzichtelijk en veilig zijn.
+              </p>
+            </section>
+
+            <section class="border broder-gray-100 rounded-lg p-3 mt-4">
+              <h3 class="font-bold text-xl">Leren door projecten</h3>
+              <p>
+                Een belangrijk onderdeel van mijn opleiding is het werken aan
+                projecten. Denk hierbij aan het opzetten en configureren van
+                netwerken, het beheren van systemen, het werken met virtuele
+                machines of het onderzoeken en oplossen van technische
+                problemen. Op deze website verzamel ik een selectie van mijn
+                projecten en opdrachten.
+              </p>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <aside class="border border-grey-200 rounded-lg p-3">
+        <h3 class="font-bold text-xl">Mijn ontwikkeling</h3>
+        <div class="grid grid-cols-1">
+          <section class="border border-grey-200 rounded-lg p-3 m-2">
+            <p>
+            </p>
+          </section>
+
+          <section class="border border-grey-200 rounded-lg p-3 m-2">
+            <p>
+
+            </p>
+          </section>
+        </div>
+      </aside>
+    </div>
+
+    <footer
+      class="max-w-7xl mx-auto px-2 py-3 flex flex-wrap items-center justify-between grid-cols-1 md:grid-cols-2 border-t border-gray-200 text-sm text-gray-600"
+    >
+      &copy 2026 Mohamed Changhaf Embarki
+    </footer>
+  </body>
+</html>

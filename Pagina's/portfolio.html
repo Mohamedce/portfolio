@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="nl-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/tailwind.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body class="bg-[#F7F5F0]">
+    <header
+      class="max-w-7xl mx-auto px-2 py-3 flex flex-wrap items-center justify-between border-b border-gray-200"
+    >
+      <img src="images/Logo1.png" alt="logo" width="90" height="90" />
+      <p class="text-xl font-bold">Mohamed Changhaf Embarki</p>
+      <input type="checkbox" id="menu-knop" class="peer sr-only" />
+      <label
+        for="menu-knop"
+        class="cursor-pointer rounded-lg border border-gray-300 px-3 py-2 peer-focusvisible:outline-2 md:hidden"
+        >Menu
+      </label>
+      <nav
+        aria-label="Hoofdmenu"
+        class="hidden w-full peer-checked:block md:block md:w-auto"
+      >
+        <ul class="flex flex-col md:flex-row md:gap-2">
+          <li>
+            <a
+              href="index.html"
+              aria-current="page"
+              class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="portfolio.html"
+              class="block px-3 py-2 rounded-lg bg-blue-100 text-blue-800 font-semibold"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="project.html"
+              class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-2 mx-auto max-w-7xl px-2 py-3">
+      <main>
+        <section>
+          <h1 class="text-4xl font-bold">portfolio</h1>
+          <p>Hier kunt u mijn projecten zien</p>
+        </section>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 flex-wrap gap-4 border border-gray-300 rounded-lg p-5"
+        >
+          <figure class="max-w-2xl border border-gray-200 rounded-lg">
+            <img
+              src="images/Sfeerbeeld2.jpg"
+              alt="Het netwerkrek in de meterkast"
+              width="1200"
+              height="800"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="mt-2 text-sm text-gray-600">Project1</figcaption>
+          </figure>
+
+          <figure class="max-w-2xl border border-gray-200 rounded-lg">
+            <img
+              src="images/Sfeerbeeld2.jpg"
+              alt="Het netwerkrek in de meterkast"
+              width="1200"
+              height="800"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="mt-2 text-sm text-gray-600">Project2</figcaption>
+          </figure>
+
+          <figure class="max-w-2xl border border-gray-200 rounded-lg">
+            <img
+              src="images/Sfeerbeeld2.jpg"
+              alt="Het netwerkrek in de meterkast"
+              width="1200"
+              height="800"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="mt-2 text-sm text-gray-600">Project3</figcaption>
+          </figure>
+
+          <figure class="max-w-2xl border border-gray-200 rounded-lg">
+            <img
+              src="images/Sfeerbeeld2.jpg"
+              alt="Het netwerkrek in de meterkast"
+              width="1200"
+              height="800"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="mt-2 text-sm text-gray-600">Project4</figcaption>
+          </figure>
+
+          <figure class="max-w-2xl border border-gray-200 rounded-lg">
+            <img
+              src="images/Sfeerbeeld2.jpg"
+              alt="Het netwerkrek in de meterkast"
+              width="1200"
+              height="800"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="mt-2 text-sm text-gray-600">Project5</figcaption>
+          </figure>
+
+          <figure class="max-w-2xl border border-gray-200 rounded-lg">
+            <img
+              src="images/Sfeerbeeld2.jpg"
+              alt="Het netwerkrek in de meterkast"
+              width="1200"
+              height="800"
+              class="w-full rounded-lg"
+            />
+            <figcaption class="mt-2 text-sm text-gray-600">Project6</figcaption>
+          </figure>
+        </div>
+      </main>
+
+      <aside>
+        <h3></h3>
+        <div class="grid grid-cols-2 md:grid-cols-1">
+          <section></section>
+          <section></section>
+        </div>
+      </aside>
+    </div>
+
+    <footer
+      class="max-w-7xl mx-auto px-2 py-3 flex flex-wrap items-center justify-between grid-cols-1 md:grid-cols-2 border-t border-gray-200 text-sm text-gray-600"
+    >
+      &copy 2026 Mohamed Changhaf Embarki
+    </footer>
+  </body>
+</html>
