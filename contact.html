@@ -112,30 +112,40 @@
                 </div>
             </form>
 
-            <form method="get" data-netlify="true" class="space-y-4 py-4">
-                <fieldset class="flex flex-wrap gap-10">
-                    <legend class="font-medium">Hoe wil je antwoord krijgen?</legend>
-                    <div class="mt-2 flex items-center gap-2">
-                        <input type="radio" id="via-mail" name="antwoord" value="mail" checked
-                        class="size-5 accent-blue-700">
-                        <label for="via-mail">per e-mail</label>
-                    </div>
-                    <div class="mt-2 flex items-center gap-2">
-                        <input type="radio" id="via-tel" name="antwoord" value="telefoon" class="size-5
-                        accent-blue-700">
-                        <label for="via-tel">per telefoon</label>
-                    </div>
-                </fieldset>
-                <div class="flex items-center gap-2">
-                    <input type="checkbox" id="kopie" name="kopie" value="ja" class="size-5 accent-blue700">
-                    <label for="kopie">stuur mij een kopie</label>
-                </div>
-            </form>
+ <form name="contact" method="POST" data-netlify="true" class="space-y-4 py-4">
+    <input type="hidden" name="form-name" value="contact">
 
-            <button type="submit"
-            class="rounded-lg bg-blue-700 px-5 py-2 font-semibold text-white hover:bg-blue-800">
-            Verstuur
-        </button>
+    <!-- Voeg hier je velden voor naam, e-mail en bericht toe, met een name-attribuut -->
+
+    <fieldset class="flex flex-wrap gap-10">
+        <legend class="font-medium">Hoe wil je antwoord krijgen?</legend>
+        <div class="mt-2 flex items-center gap-2">
+            <input type="radio" id="via-mail" name="antwoord" value="mail" checked
+                class="size-5 accent-blue-700">
+            <label for="via-mail">per e-mail</label>
+        </div>
+        <div class="mt-2 flex items-center gap-2">
+            <input type="radio" id="via-tel" name="antwoord" value="telefoon"
+                class="size-5 accent-blue-700">
+            <label for="via-tel">per telefoon</label>
+        </div>
+    </fieldset>
+
+    <div class="flex items-center gap-2">
+        <input type="checkbox" id="kopie" name="kopie" value="ja"
+            class="size-5 accent-blue-700">
+        <label for="kopie">stuur mij een kopie</label>
+    </div>
+
+    <button type="submit"
+        class="rounded-lg bg-blue-700 px-5 py-2 font-semibold text-white hover:bg-blue-800">
+        Verstuur
+    </button>
+
+    <p class="text-sm text-gray-600">
+        Je gegevens worden alleen gebruikt om op je bericht te antwoorden.
+    </p>
+</form>
 
 
 </main>
